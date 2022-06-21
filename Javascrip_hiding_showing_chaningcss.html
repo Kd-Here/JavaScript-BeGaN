@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Can Change HTML Styles (CSS) | Can Show/Hide HTML Elements</title>
+</head>
+<body>
+        <h1>This is we!</h1>
+        <p id="demo1"></p>
+        <!-- Showing text inplace of blank place -->
+
+
+
+        <div id="demo2">We are using normal html</div>
+        <span id="demo3">Hi this is my normal size in html</span>
+
+
+        <p id="2">JavaScript can hide HTML elements.</p>
+
+        <button type="button" onclick="document.getElementById('3').style.display='none'">Click Me!</button>
+        <button type="button" onclick="document.getElementById('demo1').innerHTML='We showed text inplace of blank.'">Add text</button>
+        <button type="button" onclick="document.getElementById('demo2').innerHTML='We changed text by using js'">change text</button>
+        <button type="button" onclick="document.getElementById('demo3').style.fontSize='39px'">increase the size</button>
+        
+        <p id="3" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('3').style.display='block'">check Me!</button>
+</body>
+</html>
