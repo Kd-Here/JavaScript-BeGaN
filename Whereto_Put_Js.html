@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to place JS</title>
+    <script src="Attachign.js"></script>
+</head>
+<body>
+
+    <!-- It's always best to keep js inside body helps to display pages fast -->
+    <h1><p id="demo"></p></h1>
+    <button onclick='red()' type="button">Change background to red</button>
+    <button onclick="yellow()" type="button" id="yellow">Change background to yellow</button>
+    <br><br>
+
+    <button onclick="reset()">Reset to original</button>
+    <button onclick="change()">Back to normal</button>
+    
+
+    <script>
+        document.getElementById("demo").innerHTML="Change the color of body"
+        // Always write js here not in head which slows display processing. Use head to attch the js
+    </script>
+</body>
+</html>
