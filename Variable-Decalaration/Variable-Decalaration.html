@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <!-- In JavaScript, both the keywords var and let are used to declare variables. -->
+    <!-- https://www.programiz.com/javascript/let-vs-var -->
+
+    <!-- let	                                var
+    let is block-scoped.	                    var is function scoped.
+    let does not allow to redeclare variables.	var allows to redeclare variables.
+    Hoisting does not occur in let.	            Hoisting occurs in var. -->
+
+    <p id="dem">hi we are here</p>
+    <!-- <button type="button" onclick="greeting()"> Hi we are here </button> -->
+    <script>
+        // Here greet is var since scope of function
+        function greeting() { 
+            let a,b,c,d;
+            a=9;
+            b=99;
+            c=999;
+            d=a+b+c;
+            console.log(d);
+        }
+        greeting();
+        //greet is called
+        print(a)
+        // This will not work since block scope 
+    </script>
+</body>
+</html>
