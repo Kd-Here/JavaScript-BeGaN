@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vairables</title>
+</head>
+<body>
+    <h2>Hey sir which car you want to take tody.</h2>
+    <h1><p id="bm"></p>
+    </h1>
+    <p id="img"></p>
+    
+
+    <!-- What is inner HTML
+    we earlier taught we can only pass text through inner html but infact we  can pass what is wrritten in html in there.
+    For eg. 
+    Below mention html img we write in html body and past same in  you have difficulty in written in script inner html don'twoorywrite in body html and just paste there
+    same for css style happens.
+    -->
+
+    <!-- <img style="width: :200px, height:200px ;" src="" alt="" srcset=""> -->
+
+    
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Bugatti_Centodieci_side.png" alt="" srcset="">, -->
+    
+    <!-- <script>
+                document.getElementById('img').innerHTML='<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Bugatti_Centodieci_side.png" alt="" srcset="">';
+    </script> -->
+
+    
+    <script>
+        const car=['Buggati Centodieci', 'Porsche', 'Pagani', 'lamborghini', 'Rolls-Royce', 'Koineseng agera', 'Hennsye', 'Kds'];
+        const car_img=['<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Bugatti_Centodieci_side.png">','<img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/10q3/357229/porsche-918-spyder-news-porsche-918-spyder-confirmed-for-production-car-and-driver-photo-360312-s-original.jpg?fill=2:1&resize=1200:*" alt="" srcset="">',
+                        '<img src="https://www.supercars.net/blog/wp-content/uploads/2020/01/2020-Pagani-Models.png" alt="" srcset="">',
+                        '<img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/aventador/2021/gate_aven_s_01_m.jpg" alt="" srcset="">',
+                        '<img src="https://images.unsplash.com/photo-1624804269473-828dcc30a210?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9sbHMlMjByb3ljZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" srcset="">',
+                        '<img src="https://www.supercars.net/blog/wp-content/uploads/2016/01/2013-Koenigsegg-Agera-S-001-1080-370x247.jpg" alt="" srcset="">',
+                        '<img src="https://www.supercars.net/blog/wp-content/uploads/2016/04/2013_Hennessey_VenomGTSpyder1.jpg" alt="" srcset="">',
+                        '<img src="https://i.pinimg.com/originals/91/d0/0b/91d00bbfa89a3b0cfab84b2c6cf0bbf7.jpg" alt="">']
+
+        
+        
+        
+        const random= Math.floor(Math.random() * car.length);
+        console.log(car[random]);
+        document.getElementById('bm').style.color='red';
+        document.getElementById('bm').innerHTML=car[random];
+        document.getElementById('img').innerHTML=car_img[random];
+
+        //we can also declare vairables in js like
+        // In short if we don't define type of variable it is automatiocally understood.
+        let person = "John Doe",
+        carName = "Volvo",
+        price = 200;
+
+
+        let b ='Kd' +"here"
+        console.log(b);
+    </script>
+</body>
+</html>
