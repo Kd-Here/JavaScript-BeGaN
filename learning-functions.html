@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learninng functions</title>
+</head>
+<body>
+    <p id="de"></p>
+    <p id="de1"></p>
+    <form id='formid' method="get"">
+        <label for="quantity">Convert Fahrenheit to Celsius:</label>
+        <input type="number" name="name" id="txt"> 
+        <input type="submit" onsubmit="return false" onclick="document.getElementById('m').innerHTML=Convert_Fahrenheit_to_Celsius(txt)">
+        <h1></h1>
+    </form>
+    <h1>The Fahrenheit value is:-</h1>
+    <h1>
+        
+        <div id="m"></div>
+    </h1>
+<script>
+    function name_for_function(){
+        let x=98;
+        let y=99;
+        return x+y
+    }
+    document.getElementById('de').innerHTML=name_for_function();
+    document.getElementById('de1').innerHTML=name_for_function;
+    // since no () it assumes name_of_function as object.
+
+    
+    function Convert_Fahrenheit_to_Celsius(a){
+        var a = document.getElementById("txt").value; 
+        return (a-32)*5/9
+    }
+
+
+
+
+
+
+
+
+    console.log(` Functions are created by using a keyword name function with() brackets to hold parameters
+    and called by usign function name along with the(); which invokes remeber that () are necessary for invoking the fucntions.
+    Arguments are the values that parameters get when function is called.
+
+    SO we can say that a functio with set parameters can reused for many times by passing different inputs i.e. arguments.
+    `);
+
+
+</script>
+
+</body>
+</html>
