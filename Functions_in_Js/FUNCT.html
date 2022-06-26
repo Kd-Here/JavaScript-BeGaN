@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fag</title>
+</head>
+<body>
+    <form action="" id="txt">
+    <input type="text" name="fname" id="me">
+    <input type="submit" value="Submit">
+</form>
+<br>
+
+
+<!-- When button bring out of form it makes page stable doesn't get overload -->
+<button onclick="mydef()">Print below me</button>
+<p id="demo"></p>
+    <script>
+
+        function mydef(){
+        var text = document.getElementById("txt").elements.namedItem("fname").value;
+        document.getElementById("demo").innerHTML = text; 
+        } 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning about Objects</title>
+</head>
+<body>
+    <h1>Studying about javascript</h1>
+    <h2 style="color: yellow;">Objects are real world entity/thing. Which has many property and functions i.e methods while dealing with Objects.
+    We have variables, method but when they grouped together they forms an Object.
+    </h2>
+    <h2 style="color: blueviolet;">Let's have an example a phyiscal thing like ball it will property like weight, color, grip etc.
+    The balll have methods or functions i.e use of ball is for throwing, catching, bowling, spinning.</h2>
+
+    <h1 style="color: grey;"> what is class?
+    Here we created an object ball but what if we want to have not a season ball but a plastic or rubber ball or marble ball or paper.
+    So we to avoid overwirghtin it we use class which gives us a template for creating and using object if needed we can add or remove certain property from classes for the instant of oject which you are using curretnly
+</h1>
+
+
+
+    <h3>
+
+
+        <h2 style="color: indigo;">Ball is objext</h2>
+        <h1>const Ball={</h1>
+        <strong>Property</strong>
+        <br>
+        ball.weight="300g";
+        <br>ball.grip="hard";
+
+        <br>
+        <strong>Methods</strong>
+        <br>
+        ball-throw=function(){
+            return this.-----;
+        }
+        <h1>}</h1>
+
+    </h3>
+
+    <p id="dem1">Hi</p>
+    <p id="dem2">Hi</p>
+    <p id="dem3">Hi</p>
+    <p id="de4">h</p>
+    <script>
+    //object name  property  value of that property
+        const car = {name:"Buggati-Centodiece",  //property
+                    price:"75Million$",         //property
+                    country:"France",           //property
+                    mycar:function(){
+                        return car.country;
+                    }
+    }
+    document.getElementById('dem1').innerHTML=car.name+" Is your new car Congrats Kd";
+    document.getElementById('dem2').innerHTML=car.mycar()+" Is where you brought new car Congrats Kd";
+    document.getElementById('dem3').innerHTML=typeof(car);
+    document.getElementById('de4').innerHTML=car['price'];
+        </script>
+
+</body>
+</html>
