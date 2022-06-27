@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JS</title>
+</head>
+<body>
+        <h1 style="color: blue;" ></h1>
+
+    <h1 style="color: indigo;">Check we have added js element to next line usign <br></h1>
+    <label for="f">Enter what is your name:-</label>
+    <input type="text" name="fullname" id="store" oninput="typer();">
+    <p id="dem"></p>
+    <p style="color: blue;"></p>
+
+
+    <pre id="demo">This is used to preformating</pre>
+    <script>
+        function typer(){
+            let a=document.getElementById('store').value;
+            let se=a.length;
+         
+            document.getElementById('dem').innerHTML= "<h1 style='color: yellow;'>You are Typing :- "+a+"<br><br> Total word count size is :- "+se;
+        // Note that you added html content in innerHTML just by copyingfrom body. don't forget about single colon for color.
+            }
+            
+
+
+let text = "The character \n The \\n is used along with pre in html to bring content to next line";
+document.getElementById("demo").innerHTML = text; 
+
+
+
+    </script>
+</body>
+</html>
