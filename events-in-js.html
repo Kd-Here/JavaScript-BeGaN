@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h2 style="color: blueviolet;">When html event are changed js can used to keep make changes on page byadding event with js result code. </h2>
+    
+<h3>Click on See now to Check current Time</h3>
+<button onclick="document.getElementById('di').innerHTML=seetime();">Click To keep date on page</button>
+<br><br>
+
+<button onmouseover="displayDate()" onmouseout="disout()">Hover Mouse to see and remove time</button>
+
+<p id="de" style="cursor: pointer;" ondblclick="myd();">Doubles click on me</p>
+<p id="demo"></p>
+<p id="di"></p>
+<p id="h1"></p>
+    <script>
+        function myd(){
+            document.getElementById('h1').innerHTML="Check this page to have idea about all html events:- https://www.w3schools.com/jsref/dom_obj_event.asp"
+        }
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }   
+        function disout(){
+            document.getElementById("demo").innerHTML = "";
+        }
+        function seetime(){
+            return Date();
+        }
+    </script>
+</body>
+</html>
