@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings methods in Js</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <p>The slice() method extract a part of a string
+        and returns the extracted parts in a new string:</p>
+        
+        <p id="demo"></p>
+        
+        <p id="d1"></p>
+        <p id="d2"></p>
+
+        <h2>Replacing the string with other string</h2>
+        <input type="text" id="star" placeholder="Enter the name of Companpy you want to lead">
+        <button onclick="myreplace()" type="submit">Replacing the string</button>
+        <p nmae="d3"></p>
+        <p id="d4">hi</p>
+
+
+        <hr>
+        <h1 style="color: blue;">If you want to take html or user value what he submit in input use id  and .value to get it from js</h1>
+        <h1 style="color: rgb(172, 172, 230);">If you want to take html value then use .innerHTML</h1>
+        
+        <label for="stringshort">Enter string with some large white spaces:- </label>
+        <input type="text"  id="loe" placeholder="Begun!">
+        <button onclick="removingspace()" type="submit">Remove spaces</button>
+        <p id="le"></p>
+
+        <p id="demm"></p>
+        <button onclick="stringDivider()" type="submit">If wanted to wrap</button>
+        <p style="display: flex; flex-wrap: wrap;" id="deee" wrap="hard">Hi</p>
+    
+    <script>
+        let text = "5";
+        let adfd=text.padEnd(989,"9899");
+        console.log(adfd)
+
+        document.getElementById('deee').innerHTML=adfd;
+
+
+
+
+        function removingspace(){
+            let a=document.getElementById('loe').value;
+            let b=a.trim();
+            console.log(b);
+            document.getElementById('le').innerHTML=b;
+        }
+
+
+
+
+
+
+        let ad = "Apple,aBanana, Kiwi";
+        document.getElementById('demo').innerHTML=ad.slice(6,14)
+        document.getElementById("d1").innerHTML = ad.substr(7);
+        document.getElementById('d2').innerHTML=ad.split(2,3)
+        function myreplace(){
+            let ass=document.getElementById('star').value 
+            console.log(ass)
+                if (ass=="Amazon" || "SpaceX" || "Meta" || "Alphabet" || "Microsoft"){
+                    let b=ass
+                    let c=ass.replace(b,"kdhere")
+                    return document.getElementById('d4').innerHTML=c
+                    }
+                else{
+                    console.log("no")
+                }         
+            }
+        
+    </script>
+</body>
+</html>
