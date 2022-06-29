@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Str index seacrhdf</title>
+</head>
+<body>
+
+    <label for="idexof"><h1>We are finding index of itaque</h1></label>
+    <p id="indexof">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fuga architecto a? Hic, totam itaque mollitia sit, natus fugit enim dolore non optio nam repellendus at quidem quam qui voluptas?</p>
+    
+    <br><hr>
+    <label for="lastidexof"><h1>We are finding lastindex means occurenec of last itaque</h1></label>
+    <p id="lastidexof">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, at. Ut dignissimos magnam, dolore rem ea eos cupiditate incidunt quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt itaque enim veniam reiciendis quod illo accusamus rerum suscipit asperiores!</p>
+
+    <br>
+    <br>
+    <hr>
+    <div style="text-align: center;">    
+        <span style="background-color: yellow; text-align: center; font-size: xx-large; font-weight: 900;  color:brown">
+        Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+    </span>
+</div>
+
+
+    <h1 style="background-color: yellow; text-align: center;  color:brown"> Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+    </h1>
+    <br><br>
+    <hr>
+
+        <p id="indexOfwithlocation">The indexOf() method accepts as second parameter as the starting position for the search:
+        </p>
+        <br><br>
+        <hr>
+
+        <h1>
+        <p id="search">The search() method returns the position of the first occurrence of as specified text in a string:
+        </p></h1>
+
+        <br><br>
+        <hr>
+
+
+
+        <p id="includes">The search() method returns the position of the first occurrence of as specified text in a string:
+        </p></h1>
+
+    <script>
+        let a=document.getElementById('indexof').innerHTML;
+        console.log(a)
+        let b=a.indexOf("itaque");
+        console.log(b)
+
+       a=document.getElementById('lastidexof').innerHTML;
+        console.log(a)
+        b=a.lastIndexOf("elit");
+        console.log(b)
+
+        a=document.getElementById('indexOfwithlocation').innerHTML;
+        console.log(a)
+        b=a.indexOf("as",12);
+        console.log(b)
+
+        a=document.getElementById('search').innerHTML;
+        console.log(a)
+        b=a.search(" as ");
+        console.log(b)
+
+        a=document.getElementById('includes').innerHTML;
+        console.log(a)
+        b=a.search(" specified ");
+        console.log(b)
+
+    </script>
+
+</body>
+</html>

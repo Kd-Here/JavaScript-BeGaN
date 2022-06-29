@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Interpolation
+    </title>
+</head>
+<body>
+
+    <h1 style="background-color: rgb(149, 149, 207); color:rgb(204, 81, 50)"> Interpolation : Template literals provide an easy way to interpolate variables and expressions into strings.
+    </h1>
+    <p id="dfa"></p>
+    <p id="demo"></p>
+    
+<script>
+    let firstName = "kd";
+    let lastName = "here";
+
+let text = `I am everywhere ${firstName} ${lastName}!`;
+document.getElementById('dfa').innerHTML=text;
+let html = `<h2 style="background-color:orange;">${text}</h2>`;
+document.getElementById("demo").innerHTML = html;
+
+</script>
+
+</body>
+</html>

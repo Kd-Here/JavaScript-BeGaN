@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h2>Python list can different datatypes in it. Python array have same datatypes
+    but in javascript arrays is object which use number index method for exceutin instead of parameters.
+</h2>
+<hr>
+
+    <h1>The Difference Between Arrays and Objects
+       <br> In JavaScript, arrays use numbered indexes ie cars[0].  
+        <br> In JavaScript, objects use named indexes. cars["brand"] or cars.brand </h1>
+<h3 style="color: pink;">So how to knwo whether the sequence is array or object we had inbuilt method for that!</h3>
+        <p id="demo">Car</p>
+        <p id="d1">Cars</p>
+        <button onclick="Carslist()"  ondblclick="remove()">Show all cars</button>
+        <p id="d2f"></p>
+        <script>
+            //creating an empty array
+            //Can create array using new
+            // const cars = new Array();
+
+            const car = [];
+                car[0]= "Buggati Centodieci";
+
+// How to add elements  in array
+document.getElementById("demo").innerHTML = car;
+
+
+
+
+
+
+const cars=['Buggati Centodieci', 'Porsche', 'Pagani', 'lamborghini', 'Rolls-Royce', 'Koineseng agera', 'Hennsye', 'Kds'];
+let t = "";
+for(let i=0;i<cars.length;i++){
+    t+="<li>" + cars[i] + "</li>";
+}
+t += "";
+
+document.getElementById('d1').innerHTML=t;
+
+
+function Carslist(){
+    t='';
+    for(let i=0;i<cars.length;i++){
+    t+="<li>" + cars[i] + "</li>";
+}
+t += "";
+document.getElementById('d2f').innerHTML=t;
+}
+
+function remove(){
+    document.getElementById('d2f').innerHTML="";
+
+}
+
+
+
+        </script>
+</body>
+</html>
