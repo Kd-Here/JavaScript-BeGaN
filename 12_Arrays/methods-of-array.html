@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays methods</title>
+</head>
+<body>
+    <h1>Pop and push remove and add new lieteral to array from end</h1>
+    <h1>Shift and Unshift add & remover literal from beginning of array</h1>
+<p id="de"></p>
+<p id="de1"></p>
+<p id="de2"></p>
+<p id="de3"></p>
+<p id="de4"></p>
+<p id="de5"></p>
+<p id="de6"></p>
+
+
+
+    <script>
+                const car=['Buggati Centodieci', 'Porsche', 'Pagani', 'lamborghini', 'Rolls-Royce', 'Koineseng agera', 'Hennsye', 'Kds'];
+                let a=car.pop();
+                document.getElementById('de1').innerHTML=car;
+                let b=car.push(a);
+                document.getElementById('de2').innerHTML=car;
+                
+                a=car.shift();
+                document.getElementById('de3').innerHTML=car;
+                
+                b=car.unshift(a);
+                document.getElementById('de4').innerHTML=car;
+
+
+                car[8]="Jaquar x";
+                car[9]="devel sixteen";
+                document.getElementById('de5').innerHTML=car;
+                
+                c1=car.slice(0,10);
+                document.getElementById('de6').innerHTML=c1;
+
+
+
+    </script>
+</body>
+</html>
