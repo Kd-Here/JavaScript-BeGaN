@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates with Js</title>
+</head>
+<body>
+    <p id="de"></p>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // let a  = Date();
+        let a =new Date();
+        document.getElementById('de').innerHTML=a;
+        const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+        // 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+        document.getElementById('de1').innerHTML=a;
+
+        // One parameter will be interpreted as new Date(milliseconds).
+
+        const da = new Date(2018);
+        document.getElementById("demo").innerHTML = da  ;
+
+
+        // This convert date into string format for better readign
+        document.getElementById("demo1").innerHTML = a.toDateString();
+
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>

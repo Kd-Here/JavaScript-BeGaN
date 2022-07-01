@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing the Dates </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 style="background-color: indigo; color:yellowgreen;">The best method to display date is toDateString which converts the date in more general format for understanding</h1>
+    <p id="de"></p>
+    <br><br>
+    <button type="submit" onclick="todayyear()" ondblclick="nothing()">To see Year</button>
+    <button type="submit" onclick="todaymonth()" ondblclick="nothing()">To see Month</button>
+    <button type="submit" onclick="todaydate()" ondblclick="nothing()">To see Date</button>
+    <button type="submit" onclick="todayday()" ondblclick="nothing()">To see Day</button>
+    <button type="submit" onclick="todayhrs()" ondblclick="nothing()">To see Hrs</button>
+    <button type="submit" onclick="todaymin()" ondblclick="nothing()">To see Minutes</button>
+    <br><br>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    
+    <hr style="  border: 4px solid black;" class=" bg-dark text-white">
+
+    <h2 style="background-color: indigo; color:yellowgreen;">The set method are used to set or change date from our need year,month,time,hrs</h2>
+    <p id="bako"></p>
+    <script>
+        let a=new Date();
+        document.getElementById("de").innerHTML ="<h1> Today's date is : "+  a.toDateString() +"</h1>";
+
+        todayyear=()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's year is : "+  a.getFullYear() +"</h1>";      
+        }
+        var ad = [ "January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December" ];
+        todaymonth =()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's Month is : "+  ad[a.getMonth()] +"</h1>";      
+        }
+        todaydate=()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's Date is : "+  a.getDate() +"</h1>";      
+        }
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        todayday=()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's Day is : "+  days[a.getDay()] +"</h1>";      
+        }
+        todayhrs=()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's Hour is : "+  a.getHours() +"</h1>";      
+        },
+        todaymin=()=>{
+            return document.getElementById('de1').innerHTML="<h1> Today's Min is : "+  a.getMinutes() +"</h1>";      
+        }
+        nothing= ()  => {  
+            return document.getElementById('de1').innerHTML=" ";
+        } 
+        a.setFullYear(2020);
+        document.getElementById('bako').innerHTML="<h1> "+ a+"</h1>";
+
+    </script>
+    
+</body>
+</html>
