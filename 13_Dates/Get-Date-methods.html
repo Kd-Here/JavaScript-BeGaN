@@ -36,7 +36,7 @@
     <script>
         let a=new Date();
         document.getElementById("de").innerHTML ="<h1> Today's date is : "+  a.toDateString() +"</h1>";
-
+        a.setHours(12);
         todayyear=()=>{
             return document.getElementById('de1').innerHTML="<h1> Today's year is : "+  a.getFullYear() +"</h1>";      
         }

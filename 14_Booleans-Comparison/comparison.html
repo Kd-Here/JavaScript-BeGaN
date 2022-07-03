@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison operators in Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 style="background-color: indigo; color:yellowgreen;">Js uses logical operator's by symbols not by their name as we seen in python </h1>
+    <h3 style="background-color: indigo; color:yellowgreen;">Js have && || !</h3>
+
+    <hr>
+    <h2>Lets see about ternary operators:-</h2>
+    <input type="number" name="age" id="as" placeholder="Enter your age">
+    <button onclick='checkvalidy()' type="submit">Check validity</button>
+    <p id="tern"></p>
+
+
+    <p id="de"></p>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        checkvalidy=()=>{
+            // let age = document.getElementById("as").value;
+            let bs=(document.getElementById('as').value<18) ? "Too young to enter here":"You can enter here";
+            document.getElementById("demo").innerHTML = bs;
+
+        }
+
+        // == equla to operator
+        let a=9899;
+        let b='9899';
+        document.getElementById('de').innerHTML=" The type of a & b are "+typeof(a)+"  "+typeof(b)+" respectively.";
+        document.getElementById('de1').innerHTML= (a==b);
+        
+        // === equal value and equal type operator
+        document.getElementById('de2').innerHTML= (a===b);
+        
+        
+        //!= not equal to 
+        document.getElementById('de3').innerHTML= (a!=b);
+        // false bcoz a & b both  are equal.
+        
+        
+        // !== not equal value or not equal type	
+        document.getElementById('de4').innerHTML= (a!==b);
+        
+
+
+
+
+    </script>
+        
+
+
+    </script>
+    
+</body>
+</html>
