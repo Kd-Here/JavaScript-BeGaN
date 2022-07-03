@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If & else if in Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 style="background-color: indigo; color:yellowgreen;">In js switches are same as if else if but will stop when 1 condition matches!</h1>
+    <hr>
+    <ul>
+        <li>
+            The switch expression is evaluated once.
+            
+        </li>
+        <li>
+            The value of the expression is compared with the values of each case.
+            
+        </li>
+        <li>
+            If there is a match, the associated block of code is executed.
+            
+        </li>
+        <li>
+            If there is no match, the default code block is executed.
+
+        </li>
+</ul>
+    <label for="time">Hi there! </label>
+<h4>We are showing you today's day :-
+</h4>
+    <p id="d1"></p>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let a=new Date();
+        b=a.getDay();
+        // b=98;/
+        // switch () has expression 
+        switch(b){
+
+            // instead of case in number it can be float, string etc
+            // case "Banana":
+            //     alert("Hello")
+            //     break;
+            
+            // case "Apple":
+            //     alert("Welcome")
+            //     break;   
+            
+            
+
+            // ----------------------------------------------------------------------------------------
+            case 1:
+                day = "Sunday";
+                break;
+        
+            case 2:
+                day = "Monday";
+                break;
+            case 3:
+                day = "Tuesday";
+                break;
+            case 4:
+                day = "Wednesday";
+                break;
+            case 5:
+                day = "Thursday";
+                break;
+            case 6:
+                day = "Friday";
+                break;
+            case  0:
+                day = "Saturday";
+
+                default:
+                day = "---day I think you are from other plante!";
+
+}
+            
+            document.getElementById('demo1').innerHTML="Today is "+day;
+
+    </script>
+    
+</body>
+</html>
