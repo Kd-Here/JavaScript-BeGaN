@@ -1,5 +1,9 @@
 # JavaScript-BeGaN
 Began Js from 3 days.
+
+use this color for background
+#081b4b
+
 Do in 2 days!
 
 Arrays are completed. From 2morowo we can began with js dates! 
