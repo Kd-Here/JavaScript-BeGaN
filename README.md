@@ -9,4 +9,7 @@ Do in 2 days!
 
 
 
-    ![Shiva!](https://user-images.githubusercontent.com/90677747/177475281-c9e99a1f-f174-408d-8f87-a0ab7ada6c4c.gif)
+    
+![Shiva!](https://user-images.githubusercontent.com/90677747/177475417-6fbd2a65-deb1-41ab-abcd-a01ded3c1108.gif)
+
+
