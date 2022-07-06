@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle button in JS</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+    .button {
+        padding-top: -2px;
+        margin: 3px 12px 7px 11px;
+}
+#das{
+    text-align: center;
+}
+.button:active {
+    margin: 6px 10px 2px 10px;
+}
+</style>
+
+</head>
+<body>
+    <h1 style="background-color: indigo; color:yellowgreen;">There is no inbuilt toggle function we can create it using if else if first is up exceute this els down exceute thhis</h1>
+
+   
+    <hr>
+
+    <span style="font-size: 25px;" id="et">Want to go for ride</span>  
+        <img id="das" class="button" style="cursor: pointer;" onclick="ImageToggle()" src="./25623-removebg-preview.png" width="20px"  height="18px" alt="" srcset="">   
+
+    <p id="de"></p>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+            const car=['Buggati Centodieci', 'Porsche', 'Pagani', 'lamborghini', 'Rolls-Royce', 'Koineseng agera', 'Hennsye', 'Kds'];
+            let togg=true;
+            ImageToggle=()=>{
+                //assume togg as fals
+                let va='';
+                for(let i=0; i<car.length; i++){
+                    va +='<li>'+car[i]+'<br>';
+                    }
+                    
+                    
+                // first we declare toggle as true so here it will not equal to ture ie. it get changed but when we click on toggle again it become flase
+                // i.e if is exceuted
+                togg=!togg;
+                if(togg){
+                    document.getElementById('das').src='./25623-removebg-preview.png'
+                    document.getElementById('de2').innerHTML=" ";
+                    // document.getElementById('demo1').innerHTML="hi";
+                }
+                else{
+                    // document.getElementById('demo1').innerHTML="bye";
+                    document.getElementById('das').src='./25623.png';
+                    document.getElementById('de2').innerHTML=va;
+                    document.getElementById('de2').style.paddingLeft='13px';
+                }
+                
+            }
+            
+    </script>
+        
+
+
+    </script>
+    
+</body>
+</html>
