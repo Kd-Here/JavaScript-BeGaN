@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of loop use</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <style>
+        h1,h2{
+            background-color: #081b4b ;
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>For of loop is use to iterate over object, strings and arrays</h1>
+    <h2>The JavaScript for of statement loops through the values of an iterable object.
+        It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+        </h2>
+<h1>
+    Which car are you taking today:-
+</h1>
+        <p id="de"></p>
+        <p id="de1"></p>
+        <p id="de2"></p>
+        <p id="de3"></p>
+        <p id="de4"></p>
+        <p id="de5"></p>
+        <p id="de6"></p>
+
+        <script>
+            const car=['Buggati Centodieci', 'Porsche', 'Pagani', 'lamborghini', 'Rolls-Royce', 'Koineseng agera', 'Hennsye', 'Kds'];
+            let it="<ul>";
+            for(let i of car){
+                it+='<li>'+i+'<br>';
+                console.log("The value of it:-"+it+"The value of i:-"+i)
+            }
+            document.getElementById('de2').innerHTML=it;
+            
+            
+            let ad="<hr>";
+            let my_name="Kdhere";
+            for(let u of my_name){
+                ad+=u+"<br>";
+            }
+            document.getElementById('de3').innerHTML=ad;
+        
+        </script>
+
+</body>
+</html>
