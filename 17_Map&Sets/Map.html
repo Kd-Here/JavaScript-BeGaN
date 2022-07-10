@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map in Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<style>
+  
+</style>
+
+</head>
+<body>
+    <h1 style="background-color: indigo; color:yellowgreen;">There is no inbuilt toggle function we can create it using if else if first is up exceute this els down exceute thhis</h1>
+    <hr>
+    <p id="de"></p>
+    <p id="de1"></p>
+    <p id="de2"></p>
+    <p id="de3"></p>
+    <p id="de4"></p>
+    <p id="de5"></p>
+    <p id="de6"></p>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      
+      const map1 = new Map(); // an empty map
+      
+      map1.set("Poyu","Js");
+      map1.set("Kiy","html");
+      map1.set('1',9899);
+      map1.set('key',{name:"Ka",age:"24"});
+      console.log(map1);
+      console.log(map1.get('key')); // {name: "Jack", age: "26"}
+      
+      // to print all the key and value of map.
+      for(let [i,j] of map1){
+        console.log(i+":"+j);
+      }
+      
+
+// To print all value of map using for each loop
+      map1.forEach((a,b) => {
+        console.log(b,":" ,a);
+      });
+      
+      
+      
+      // map1.forEach(() => {
+      //   console.log(k":");
+      // });
+
+
+
+
+
+
+
+
+
+      
+      // TOo check whether we have given keyin our map or not
+      console.log(map1.has('1'));
+        
+
+
+    
+    </script>
+    
+</body>
+</html>
