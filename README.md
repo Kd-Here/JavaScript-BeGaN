@@ -3,10 +3,8 @@
 use this color for background
 #081b4b
 
-Do in 2 days!
-
-![image](https://user-images.githubusercontent.com/90677747/177474942-ef022148-acf6-4c62-9e23-1bf2c87a3d28.png)
-
+Do intoday!
+![image](https://user-images.githubusercontent.com/90677747/178187250-d02455e4-9fd3-4ebf-88a9-93aed37e6507.png)
 
 
     
