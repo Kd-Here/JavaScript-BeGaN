@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw, and Try...Catch...Finally
+    </title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        p{
+            background-color: rgb(193, 161, 223);
+        }
+        h1,h4{
+            background-color: yellow;
+        }
+        h2,h3{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p id="de">hi we are here!</p>
+    <p id="dee">In js if an error occurs it will throw an excception err
+        Js will actually create a Error object which has property of Name and Message;
+        and you know how to access the object property 
+    </p>
+    <h1>The JavaScript statements try and catch come in pairs:
+    </h1>
+    <h2>try is just test user defined block code which might have a error</h2>
+<h2>Catch is to show or give a result if the user defined code has error </h2>
+
+<h3>The throw statement allows you to create a custom error.
+<h4>Finally statement will excute no matter of going through try and catch</h4>
+</h3>
+
+
+<script>
+    try{
+        alertr('This is block we worngly typed to see how try and catch works.')
+    }
+    catch(err){
+        document.getElementById('de').innerHTML="Here Message is :- "+err.message+"\n and Name is :- "+err.name;
+    }
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
