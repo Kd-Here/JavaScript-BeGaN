@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Js classes :- </title>
+</head>
+<body>
+    
+    
+
+    <h2>Coding with Js class video 31 !</h2>
+
+<h1 style="background-color: rgb(147, 147, 207);">we are creating a class for  Employees in Company and then we will practise on inheritance for programmer who is also an employee having two more parameter i.e. properites</h1>
+
+<p id="d1"></p>
+<p id="d3"></p>
+
+<script>
+
+
+
+// Solve real world problem of company using class of Employees
+class Employees{
+
+    constructor(Name,Year_of_joining,Domain){
+        this.name=Name;
+        this.yearfrom=Year_of_joining;
+        this.field=Domain;
+    }
+
+    // Company is here method which is accessing class property!
+    Company(){
+        return `we are the company originated in Uream and ${this.name} and ${this.yearfrom} with domain specific ${this.field}`
+    }
+
+
+    Working_Experince(){
+        return 2022-this.yearfrom     
+    }
+
+
+    // This is a static method which doesn't take any property of class but storred in class which can be called idrectyly by obj.static.
+
+    static additn(a,b){
+        return a*b;
+    }
+
+}
+
+// Here we are creating a child of class Employee which will extend all property and functinon but can have some speical proeperty.
+
+
+class Programmer extends Employees{
+    constructor(Name,Year_of_joining,Domain,language){
+        super(Name,Year_of_joining,Domain);
+        // This super means copy same as of parent class.
+        this.lan=language;
+    }
+    show() {
+    return `This is the employee name :-${this.name} who is working from year ${this.yearfrom} and is currntlyworkingas ${this.field} wiht ${this.lan} as specializsed languagelta `;
+  }
+
+}
+
+
+
+
+
+
+
+Abe=new Employees("Shin",2012,"Programming");
+console.log(Abe.yearfrom);
+console.log(Abe.Company());
+document.getElementById('d3').innerHTML=Abe.Working_Experince();
+
+console.log(Employees.additn(9,9));
+
+
+
+Brtar=new Programmer('sfs',2020,"Developing","Js");
+console.log(Brtar.name);
+console.log(Brtar.yearfrom);
+</script>
+
+</body>
+</html>

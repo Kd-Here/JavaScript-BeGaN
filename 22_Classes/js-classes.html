@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javas classes :-</title>
+</head>
+<body>
+    <p id="is"></p>
+    <p id="demo"></p>
+    <p id="ss"></p>
+    <p id="dse"></p>
+    <script>
+        class Myfirst_car{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+
+        const myde=new Myfirst_car("fsf","sgf");
+        document.getElementById('demo').innerHTML="The resulted output is :-"+myde.name+"  ada "+myde.year;
+
+
+
+        class Myasto{
+            constructor(model,color){
+                this.model=model;
+                this.color=color;
+            }
+        }
+        let adg=new Myasto("Valkyrie","Slipstream Green");
+        document.getElementById('ss').innerHTML=
+        "<h1>I loved this new car </h1>"+adg.model+" whose color is "+adg.color;
+    
+    
+        class Car {
+        constructor(name, year) {
+            this.name = name;
+            this.year = year;
+        }
+        age() {
+            let date = new Date();
+            return date.getFullYear() - this.year;
+        }
+}
+
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("dse").innerHTML =
+"My car is " + myCar.age() + " years old.";
+
+    
+    
+    
+    </script>
+</body>
+</html>
