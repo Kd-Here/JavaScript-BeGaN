@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict mode</title>
+</head>
+<body>
+    
+    <h1>Js is variable hoisting means we can use vairable befor edeclaring it but sometime it creates an error but  js avoids or simply solvesthem and user don't know what''s happenng underneath the hood1
+
+    </h1>
+    <script>
+        "use strict"; //This is the initatior for strict mode where we are foucring our browser to show all the possible error in the file.
+        a=9899;
+        console.log(a);
+        // see if you comment the use strict string it will don't show error which is currently shown by our console.
+
+
+        x = {p1:10, p2:20};x = {p1:10, p2:20};
+
+
+
+        
+        mydef();
+
+        function mydef(){
+            ad=99;
+            alert(ad);
+        }
+    </script>
+</body>
+</html>

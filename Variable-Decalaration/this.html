@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword in Js</title>
+</head>
+<body>
+    
+
+
+
+
+
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+<h1>Let's see about JavaScript <b><i>this</i></b> Keyword</h1>
+<p id="demo"></p>
+<p id="de"></p>
+<p id="ed"></p>
+<script>
+
+document.getElementById("ed").innerHTML = myFunction();
+
+function myFunction() {
+  return this;
+}
+
+
+
+
+let x = this;
+document.getElementById("de").innerHTML = x;
+    const person = {
+      firstName: "Kd",
+      lastName: "here",
+      id: 5566,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+    
+    // Display data from the object:
+    document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+    
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functiions :-</title>
+    <p id="id2"></p>
+    <p id="id"></p>
+    <p id="de"></p>
+    <p id="id1"></p>
+    <button id="re" type="submit" onclick="gone()">Remove me</button>
+</head>
+<body>
+    <script>
+        
+
+        // "use strict";
+        gone=()=>{
+            document.getElementById('re').style.display="none";
+
+        }
+
+
+
+
+        let myfunction=(a,b)=>a*b;
+        document.getElementById('id').innerHTML=myfunction(98,99);
+
+
+
+        var fun;
+        fun=(vale)=> "hello"*vale;
+        document.getElementById('de').innerHTML=fun(2);
+
+
+
+        var hello;
+        hello=function(){
+            return "Helloworld!";
+        }
+        document.getElementById('id1').innerHTML=hello();
+    </script>
+    
+
+</body>
+</html>
