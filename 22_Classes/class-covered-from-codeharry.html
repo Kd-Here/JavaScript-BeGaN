@@ -65,6 +65,20 @@ class Programmer extends Employees{
 }
 
 
+// here we are exporting this class into another js or html file so we need to write export here
+class DataScientists extends Employees{
+    constructor(Name,Year_of_joining,Domain,Software_using){
+        super(Name,Year_of_joining,Domain);
+        this.paid_software_used=Software_using;
+
+    }
+    showing(){
+        return `This is the employee name :-${this.name} who is working from year ${this.yearfrom} and is currntlyworkingas ${this.field} wiht ${this.paid_software_used} as paid software  `;
+    }
+}
+
+
+
 
 
 

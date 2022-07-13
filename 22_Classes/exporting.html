@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning how to import and export in js</title>
+</head>
+<body>
+    <p id="s3"></p>
+
+
+
+
+    <script type="module">
+        import DataScientists from './importing_exporting.js';
+        let penau=new DataScientists();
+        penau.name="Shu";
+        penau.field="Data-Mining";
+        penau.yearfrom=2020;
+        penau.paid_software_used="Mylab";
+        console.log(penau.showing());  
+
+        
+        console.log(penau);
+        document.getElementById('s3').innerHTML=penau.showing();
+    </script>
+</body>
+</html>
