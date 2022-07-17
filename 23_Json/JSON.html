@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON use in both front end and backend</title>
+</head>
+<body>
+    <p id="id"></p>
+    <p id="demo"></p>
+    <!--
+        
+        {
+            "employees":[
+            {"firstName":"Amber", "lastName":"Deep"},
+            {"firstName":"Captain", "lastName":"Sparrow"},
+            {"firstName":"Pirates", "lastName":"Jack"}
+            ]
+    `      }
+ -->
+    <script>
+        // here above is the data from backend which has list of employees working in company
+        // so we might need the data in our frontend application so are here creating an object in js
+
+
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Captain ","lastName":"JackSparrow" },' +
+'{"firstName":"Captain ","lastName":"Jacksparrow" }]}';
+
+        
+
+// This is used to convert json data in txt format
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+document.getElementById('id').innerHTML=my_data
+console.log(my_data)
+    </script>
+</body>
+</html>
+
+

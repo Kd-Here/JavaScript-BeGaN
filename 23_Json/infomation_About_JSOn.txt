@@ -1,0 +1,8 @@
+I used google translate to spell and to directly get txt format!
+
+
+Json stand for javascript Object mutation what is use of JS and when baby born to fetch data from its work that is backint and we want to process that data in the front end for example let's say we have and web application or user interface very be prevented it from the back and offensive or so while receiving the data data in the back and can be in the format of PHP Python or java but we in but on front and side we are using HTML and JavaScript so if Python is in backend we can't use data received from the Python format in the JavaScript so there should be an intermediate language so JSON is used in which JSON is a string format on language with all the data is sent in the format of a string using a and b is same and then javascript Object pinned from
+
+
+
+so when JSON is used the data from the backend is sent to the front am in the format of a javascript Object which is readable by the front end and accessible by the backend using some different libraries then it creates so it is useful for both sending data from frontend to backend m from backend to frontend vice versa earlier we have XML which is over riding the same ml earlier we have use XML language which was function which function was a message from JSON but now from five years we are using on focus on JSON
